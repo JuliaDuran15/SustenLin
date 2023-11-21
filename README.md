@@ -1,4 +1,15 @@
-# React + Vite
+# Aplicativo de Reciclagem e Sustentabilidae com React + Vite
+Comandos necessarios para rodar esta aplicação:
+cd SustenLin
+npm install
+npm run dev
+npm install firebase
+npm install react-router-dom localforage match-sorter sort-by
+npm i sass
+npm i react-google-button
+npm install --save react-toastify
+npm install antd
+npm install react-icons --save
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
