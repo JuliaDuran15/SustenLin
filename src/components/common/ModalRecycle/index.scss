@@ -1,0 +1,64 @@
+
+.info-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  .info-details {
+  width: 95%;
+  height: auto;
+  background-color: whitesmoke;
+  margin-top: 10px; //100
+  border: 1px solid #b7b7b7;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .About-recicle{
+    font-family: system-ui;
+    font-weight: 600;
+    color: #212121;
+    font-size: 30px;
+    align-content: center;
+
+  }
+}}
+.tenta {
+    display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  .common-btn {
+    width: 24%;
+    height: 70px;
+    cursor: pointer;
+    background-color: #334236;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-family: system-ui;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 20px;
+    
+  }
+ 
+  .common-btn:hover {
+    background-color:#7B9D82;
+    
+    color: #334236
+    ;
+  }
+}
+
+.info-modal{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
