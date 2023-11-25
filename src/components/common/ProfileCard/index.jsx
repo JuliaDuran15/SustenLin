@@ -1,32 +1,55 @@
-import React, { useState,useMemo } from "react";
-import { HiOutlinePencil } from "react-icons/hi";
-import ProfileEdit from "../ProfileEdit";
+import React, { useState, useMemo } from "react";
 import { getSingleStatus, getSingleUser } from "../../../api/FirestoreAPI";
-import { getUniqueID } from "../../../helpers/getUniqueId";
 import PostsCard from "../PostsCard";
+import { HiOutlinePencil } from "react-icons/hi";
 import { useLocation } from "react-router-dom";
-
-
+import FileUploadModal from "../FileUploadModal";
+import { uploadImage as uploadImageAPI } from "../../../api/ImageUpload";
 import "./index.scss";
+
 
 export default function ProfileCard({onEdit, currentUser }){
     let location = useLocation();
-    const[isEdit,setisEdit] = useState(false);
-    const [allStatuses,setAllStatus] = useState([]);
+    const [allStatuses, setAllStatus] = useState([]);
     const [currentProfile, setCurrentProfile] = useState({});
+    const [currentImage, setCurrentImage] = useState({});
+    const [progress, setProgress] = useState(0);
+    const [modalOpen, setModalOpen] = useState(false);
+    const getImage = (event) => {
+      setCurrentImage(event.target.files[0]);
+    };
     console.log(currentProfile);
-    useMemo(()=>{
+    const uploadImage = () => {
+        uploadImageAPI(
+          currentImage,
+          currentUser.id,
+          setModalOpen,
+          setProgress,
+          setCurrentImage
+        );
+      };
+    
+      useMemo(() => {
         if (location?.state?.id) {
-            getSingleStatus(setAllStatus, location?.state?.id);
-          }
-      
-          if (location?.state?.email) {
-            getSingleUser(setCurrentProfile, location?.state?.email);
-          }
-    },[]);
+          getSingleStatus(setAllStatus, location?.state?.id);
+        }
+    
+        if (location?.state?.email) {
+          getSingleUser(setCurrentProfile, location?.state?.email);
+        }
+      }, []);
+
 
     return (
         <>
+         <FileUploadModal
+        getImage={getImage}
+        uploadImage={uploadImage}
+        modalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+        currentImage={currentImage}
+        progress={progress}
+      />
         <div className="profile-card">
         {currentUser.id === location?.state?.id ? (
           <div className="edit-btn">
@@ -37,6 +60,15 @@ export default function ProfileCard({onEdit, currentUser }){
         )}
             <div className="profile-info">
                 <div>
+                    <img
+                        className="profile-image"
+                        onClick={() => setModalOpen(true)}
+                        src={
+                            Object.values(currentProfile).length === 0
+                            ? currentUser.imageLink
+                            : currentProfile?.imageLink
+                        } 
+                        alt="profile-image"/>
                     <h3 className="userName">
                         {Object.values(currentProfile).length === 0
                             ? currentUser.name

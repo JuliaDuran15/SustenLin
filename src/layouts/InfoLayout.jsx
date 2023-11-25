@@ -11,7 +11,7 @@ export default function InfoLayout(){
       }, []);
     return (
         <div>
-            <Topbar/>
+            <Topbar currentUser={currentUser}/>
             <Info currentUser={currentUser}/>
         </div>
     )

@@ -5,17 +5,6 @@ import { AiOutlinePicture } from "react-icons/ai";
 
 
 
-  const Metal = () => {
-    Modal.info({
-      title: 'This is a notification message',
-      content: 
-        <div>
-          <p>some messages...some messages...</p>
-          <p>some messages...some messages...</p>
-        </div>
-      
-    });
-  };
 
 const ModalRecycleComponent = ()=>{
   const [modal1Open, setModal1Open] = useState(false);
@@ -31,7 +20,7 @@ const ModalRecycleComponent = ()=>{
        <>
        <div className="info-main">
        <div className="info-details">
-       <h1 className="About-recicle"> Aqui você encontra informações sobre reciclagem</h1>
+       <h1 className="About-recicle"> Aqui você encontra informações sobre Reciclagem e Descarte</h1>
        </div>
        </div>
        <div className="tenta">

@@ -19,17 +19,16 @@ export default function LoginComponent() {
         toast.success('Signed in SustenLin');
         localStorage.setItem('userEmail',res.user.email);
         navigate("/home");
-
     } catch(err){
         console.log(err);
         toast.error('Something heappend! Please Check your Credentials!');
-
     }
     };
-    const GoogleSignIn = () => {
+
+/*     const GoogleSignIn = () => {
         let response = GoogleSignInAPI();
         console.log(response);
-    };
+    }; */
    
 
     return (
@@ -65,7 +64,6 @@ export default function LoginComponent() {
        </div>
        <hr className="hr-text" data-content="or" />
        <div className="google-btn-container">
-         <GoogleButton className="google-btn" onClick={GoogleSignIn}/>
             <p className="go-to-signup">
             New to SustenLin?
             <span className="join-now" onClick={() => navigate("/register")}>

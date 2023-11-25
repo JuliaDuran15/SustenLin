@@ -9,13 +9,14 @@
   .profile-info {
     display: flex;
     justify-content: space-between;
+    
     .profile-image {
-      width: 200px;
-      height: 200px;
+      width: 100px;
+      height: 100px;
       object-fit: contain;
       border-radius: 50%;
-      border: 2px solid #cacaca;
-      padding: 5px;
+      border: 1px solid rgb(39, 88, 53);
+      padding: 7px;
       cursor: pointer;
     }
     .right-info {

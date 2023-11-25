@@ -1,12 +1,11 @@
 import React from "react";
-import PostStatus from "./common/postUpdate";
-import ProfilePopup from "./common/ProfilePopup";
+import "../Sass/HomeComponent.scss";
+import PostStatus from "./common/PostUpdate";
 
-export default function HomeComponent({currentUser}) {
-    return (
+export default function HomeComponent({ currentUser }) {
+  return (
     <div className="home-component">
-        <PostStatus currentUser={currentUser}/>
-        
+      <PostStatus currentUser={currentUser} />
     </div>
-    );
+  );
 }

@@ -8,6 +8,7 @@ import './index.scss'
 import { app, auth, firestore} from './firebaseConfig';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'react-quill/dist/quill.snow.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
