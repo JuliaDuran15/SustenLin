@@ -44,6 +44,10 @@ Instale os Icond do React
 ```sh
 npm install react-icons --save
 ```
+Instale React Quill
+```sh
+npm install react-quill --save
+```
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
