@@ -74,7 +74,10 @@ export default function ProfileCard({onEdit, currentUser }){
                             ? currentUser.name
                             : currentProfile?.name}
                     </h3>
-                    <p className="heading">{currentUser.headline}</p>
+                    <p className="heading">
+                        {Object.values(currentProfile).length === 0
+                ? currentUser.headline
+                : currentProfile?.headline}</p>
 
                               {/*   {(currentUser.city || currentUser.country) &&
                  (currentProfile?.city || currentProfile?.country) ? ( */}

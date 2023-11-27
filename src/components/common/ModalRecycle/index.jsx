@@ -138,8 +138,22 @@ const ModalRecycleComponent = ()=>{
         </div>
         
         </Modal>
-
+        
         </div>
+        <div className="info-main">
+       <div className="info-details">
+       <h1 className="About2-recicle"> O que NÃO pode ser descartado sem cuidados proprios:  </h1>
+
+       <li className="about2-extra-info">Pilhas e baterias: Esses dispositivos muitas vezes contêm metais pesados, como mercúrio, chumbo e cádmio, que são prejudiciais ao meio ambiente. Pilhas e baterias devem ser descartadas em pontos de coleta específicos para reciclagem.</li>
+       <li className="about2-extra-info">Produtos eletrônicos: Equipamentos eletrônicos, como computadores, telefones celulares e televisores, frequentemente contêm substâncias tóxicas, incluindo metais pesados e produtos químicos. Eles devem ser encaminhados para reciclagem adequada.</li>
+       <li className="about2-extra-info">Medicamentos vencidos: Não devem ser jogados no lixo comum ou no esgoto, pois podem contaminar a água. Muitas farmácias e postos de saúde oferecem locais para devolução segura de medicamentos.</li>
+       <li className="about2-extra-info">Óleos e gorduras: Não devem ser despejados na pia, pois podem entupir encanamentos e causar poluição da água. O descarte adequado envolve a coleta em recipientes apropriados para reciclagem.</li>
+       <li className="about2-extra-info">Pneus: Pneus descartados de forma inadequada podem ser criadouros de mosquitos e causar impactos ambientais. Muitos centros de reciclagem aceitam pneus para processamento adequado.</li>
+       <li className="about2-extra-info">Agulhas e seringas: Devem ser descartadas em recipientes próprios, conhecidos como "pontocentros" ou "pontos de coleta". Isso evita riscos de acidentes e contaminação.</li>
+
+       </div>
+       </div>
+        
       </> 
        );
       };

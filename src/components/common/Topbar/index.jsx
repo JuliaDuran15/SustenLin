@@ -105,8 +105,8 @@ export default function Topbar({ currentUser }) {
               size={30} 
               className="react-icon"
               onClick={() => goToRoute("/info")} />
-              <AiOutlineMessage size={30} className="react-icon" />
-              <AiOutlineBell size={30} className="react-icon" />
+             <AiOutlineMessage size={30} className="react-icon" />
+              <AiOutlineBell size={30} className="react-icon" /> 
             </div>
            )} 
           <img
@@ -116,22 +116,22 @@ export default function Topbar({ currentUser }) {
             onClick={displayPopup}
           />
     
-           {searchInput.length === 0 ? (
-            <></>
-          ) : (
-            <div className="search-results">
-              {filteredUsers.length === 0 ? (
-                <div className="search-inner">No Results Found..</div>
-              ) : (
-                filteredUsers.map((user) => (
-                  <div className="search-inner" onClick={() => openUser(user)}>
-                    <img src={user.imageLink} />
-                    <p className="name">{user.name}</p>
-                  </div>
-                ))
-              )}
-            </div>
-          )} 
+          {searchInput.length === 0 ? (
+              <></>
+            ) : (
+              <div className="search-results">
+                {filteredUsers.length === 0 ? (
+                  <div className="search-inner">No Results Found..</div>
+                ) : (
+                  filteredUsers.map((user) => (
+                    <div className="search-inner" onClick={() => openUser(user)}>
+                      <img src={user.imageLink} />
+                      <p className="name">{user.name}</p>
+                    </div>
+            ))
+          )}
         </div>
-      );
-    };
+      )}
+    </div>
+  );
+}
