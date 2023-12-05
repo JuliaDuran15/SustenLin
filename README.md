@@ -7,6 +7,8 @@ Que inclui:
 - Educação Ambiental: Recursos educativos, como banners,  infográficos e botôes de informação, para informar os usuários sobre a importância da reciclagem e práticas sustentáveis.
 
 Comandos necessarios para rodar esta aplicação:
+Instale o VueJS
+
 Entre na pasta:
 ```sh
 cd SustenLin
@@ -14,7 +16,6 @@ cd SustenLin
 Instale o npm e rode o programa
 ```sh
 npm install
-npm run dev
 ```
 Instale o firebase
 ```sh
@@ -47,6 +48,10 @@ npm install react-icons --save
 Instale React Quill
 ```sh
 npm install react-quill --save
+```
+Rode o programa
+```sh
+npm run dev
 ```
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
