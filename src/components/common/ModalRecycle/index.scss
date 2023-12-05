@@ -37,6 +37,10 @@
     font-size: 17px;
     font-family: system-ui;
     padding:10px 10px 10px 10px;
+    .about2-extra-info-strong{
+      font-weight: 600;
+      color:#334236;
+    }
     }
   }
 }
@@ -78,3 +82,59 @@
   flex-direction: column;
   position: relative;
 }
+
+.common-btn2 {
+  width: 40%;
+  height: 70px;
+  cursor: pointer;
+  background-color: #334236;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-family: system-ui;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 20px;
+  
+}
+.common-btn2:hover {
+  background-color:#7B9D82;
+ 
+  color: #334236
+  ;}
+
+.info-but {
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+.common-btn3{ 
+  width: 26%;
+  cursor: pointer;
+  background-color: #334236;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-family: system-ui;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+.common-btn3:hover {
+  background-color:#7B9D82;
+  
+  color: #334236
+  ;
+} 

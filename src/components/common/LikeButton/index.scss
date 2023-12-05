@@ -32,7 +32,7 @@
   .add-comment-btn {
     width: 150px;
     height: 35px;
-    background-color: #0a66c2;
+    background-color: #7B9D82;
     color: white;
     outline: none;
     border: none;
@@ -40,6 +40,10 @@
     cursor: pointer;
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+  .add-comment-btn:hover{
+    background-color: #334236;
+    color: #7B9D82;
   }
   .all-comments {
     display: flex;
